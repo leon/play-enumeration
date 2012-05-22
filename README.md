@@ -1,5 +1,5 @@
-# Scala enumerationeration plugin for Play Framework 2
-This plugin makes it possible to use enumerations across Play Framework 2
+# Scala Enumerations for Play Framework 2
+This plugin makes it possible to use Scala's Enumerations across Play Framework 2
 
  * Forms
  * JSON
@@ -20,13 +20,3 @@ Ddding the plugin to your `project/Build.scala`
     val appDependencies = Seq(
       "se.radley" %% "play-plugins-enumeration" % "<add latest version here>"
     )
-
-## Path
-
-## QueryString
-
-## Javascript
-
-## Forms
-
-## JSON
