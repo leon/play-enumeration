@@ -1,0 +1,22 @@
+
+{
+ "organization":"se.radley",
+ "name":"play-plugins-enumeration",
+ "version":"1.0.0",
+ "description":"Scala Enumeration plugin for PlayFramework 2",
+ "site":"http://github.com/leon/play-enumeration",
+ "tags":["scala", "enum", "enumeration", "play"],
+ "docs":"http://github.com/leon/play-enumeration",
+ "licenses": [{
+  "name": "Apache 2.0",
+  "url": "http://www.opensource.org/licenses/Apache-2.0"
+ }],
+ "resolvers": ["https://oss.sonatype.org/content/groups/public/"],
+ "dependencies": [{
+   "organization":"play",
+   "name": "play",
+   "version": "[2.0,)"
+  }],
+ "scalas": ["2.9.1"],
+ "sbt": false
+}
