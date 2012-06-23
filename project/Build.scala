@@ -3,7 +3,7 @@ import sbt.Keys._
 
 object ProjectBuild extends Build {
 
-  lazy val buildVersion =  "1.0.0-SNAPSHOT"
+  lazy val buildVersion =  "1.0.0"
 
   lazy val root = Project(id = "play-plugins-enumeration", base = file("."), settings = Project.defaultSettings).settings(
     organization := "se.radley",
