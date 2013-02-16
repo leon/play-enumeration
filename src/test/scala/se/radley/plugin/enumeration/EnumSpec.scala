@@ -9,7 +9,6 @@ import java.io.File
 import play.api.Play.current
 import play.api.libs.json._
 import play.api.libs.json.Json._
-import play.api.libs.json.Generic._
 
 object EnumSpec extends Specification {
 
