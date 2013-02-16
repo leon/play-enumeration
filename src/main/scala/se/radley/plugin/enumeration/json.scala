@@ -2,7 +2,8 @@ package se.radley.plugin.enumeration
 
 import play.api.mvc._
 import play.api.data.format.Formatter
-import play.api.libs.json.{Writes, JsString, JsValue, Reads}
+import play.api.libs.json._
+import play.api.libs.json.JsString
 
 package object json {
   /**
@@ -16,12 +17,12 @@ package object json {
     def reads(json: JsValue) = json match {
       case JsString(s) => {
         try {
-          enum.withName(s)
+          JsSuccess(enum.withName(s))
         } catch {
-          case _ => throw new RuntimeException("Enumeration expected")
+          case _ => JsError("Enumeration expected")
         }
       }
-      case _ => throw new RuntimeException("String expected")
+      case _ => JsError("String expected")
     }
   }
 }
