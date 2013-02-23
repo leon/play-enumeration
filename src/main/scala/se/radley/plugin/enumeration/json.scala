@@ -19,7 +19,7 @@ package object json {
         try {
           JsSuccess(enum.withName(s))
         } catch {
-          case _ => JsError("Enumeration expected")
+          case e: java.util.NoSuchElementException => JsError("Enumeration expected")
         }
       }
       case _ => JsError("String expected")

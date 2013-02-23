@@ -3,7 +3,7 @@ import sbt.Keys._
 
 object ProjectBuild extends Build {
 
-  lazy val buildVersion =  "1.0.2"
+  lazy val buildVersion =  "1.1.0"
 
   lazy val root = Project(id = "play-plugins-enumeration", base = file("."), settings = Project.defaultSettings).settings(
     organization := "se.radley",
@@ -12,7 +12,7 @@ object ProjectBuild extends Build {
     scalaVersion := "2.10.0",
     resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/",
     resolvers += "Typesafe Snapshots" at "http://repo.typesafe.com/typesafe/snapshots/",
-    libraryDependencies += "play" %% "play" % "2.1.0",
+    libraryDependencies += "play" %% "play" % "2.1.0" % "provided",
     libraryDependencies += "play" %% "play-test" % "2.1.0" % "test",
 
     publishMavenStyle := true,
